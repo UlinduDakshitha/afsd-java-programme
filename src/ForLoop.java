@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ForLoop {
     public static void main(String[] args) {
-
+        System.out.println("hi");
 
         Scanner scan=new Scanner(System.in);
         //loops----for loop,while loop,do-while loop
