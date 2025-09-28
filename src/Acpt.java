@@ -18,6 +18,6 @@ public class Acpt {
         double empSalary4= scan.nextDouble();
 
         System.out.println((empSalary+empSalary2+empSalary3+empSalary4)/4);
-
+        System.out.println("finished");
     }
 }
