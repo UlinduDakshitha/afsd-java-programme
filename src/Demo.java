@@ -13,6 +13,7 @@ public class Demo {
         System.out.print(name);
         System.out.println(bankBalance);
         System.out.println(isSmoke);
+        System.out.println("why");
         /*camel case
         int studentAge=24
 
