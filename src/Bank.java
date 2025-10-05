@@ -31,8 +31,8 @@ public class Bank {
                     index = i;
                     break;
                 }
-            }
 
+            }
 
             System.out.print("Do you want to deposit or withdraw? ");
             String choose = sc.next();
