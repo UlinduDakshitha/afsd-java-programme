@@ -18,35 +18,49 @@ public class Bank {
 
             System.out.print("Enter your starting amount: ");
             amount[i] = sc.nextDouble();
-
-
-            while (true) {
-                System.out.print("Do you want to deposit or withdraw?");
-                String choose = sc.next();
-
-                switch (choose) {
-                    case "deposit":
-                        System.out.print("Enter your deposit value:");
-                        double deposit = sc.nextDouble();
-                        amount[i] += deposit;
-                        System.out.println( amount[i]);
-                        break;
-                    case "withdraw":
-                        System.out.print("Enter your withdraw value:");
-                        double withdraw = sc.nextDouble();
-                        amount[i] -= withdraw;
-                        System.out.println( amount[i]);
-                        break;
-                    default:
-                        System.out.println("Try again.");
-                        break;
-                }
-            }
         }
 
+        while (true) {
+            System.out.println("Enter your account number (or 0 to exit");
+            int acc = sc.nextInt();
 
+            int index = -1;
+            for (int i = 0; i < 13; i++) {
+                if (accountNumber[i] == acc)
+                {
+                    index = i;
+                    break;
+                }
+            }
 
+            if (index == -1) {
+                System.out.println("Account not found!");
+                continue;
+            }
 
+            System.out.print("Do you want to deposit or withdraw? ");
+            String choose = sc.next();
+
+            switch (choose) {
+                case "deposit":
+                    System.out.print("Enter your deposit amount: ");
+                    double deposit = sc.nextDouble();
+                    amount[index] += deposit;
+                    System.out.println(" New balance: " + amount[index]);
+                    break;
+
+                case "withdraw":
+                    System.out.print("Enter your withdraw amount: ");
+                    double withdraw = sc.nextDouble();
+                    amount[index]-= withdraw;
+                    System.out.println(" New balance: " + amount[index]);
+                    break;
+
+                default:
+                    System.out.println("Invalid choice! Try again.");
+                    break;
+            }
+        }
 
     }
 }
