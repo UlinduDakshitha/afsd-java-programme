@@ -24,7 +24,7 @@ public class Bank {
             System.out.println("Enter your account number (or 0 to exit");
             int acc = sc.nextInt();
 
-            int index = -1;
+            int index = 0;
             for (int i = 0; i < 13; i++) {
                 if (accountNumber[i] == acc)
                 {
@@ -33,7 +33,7 @@ public class Bank {
                 }
             }
 
-            if (index == -1) {
+            if (index ==0) {
                 System.out.println("Account not found!");
                 continue;
             }
