@@ -33,10 +33,6 @@ public class Bank {
                 }
             }
 
-            if (index ==0) {
-                System.out.println("Account not found!");
-                continue;
-            }
 
             System.out.print("Do you want to deposit or withdraw? ");
             String choose = sc.next();
