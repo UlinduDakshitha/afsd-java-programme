@@ -8,6 +8,7 @@ public class Bank {
         int[] accountNumber = new int[13];
         double[] amount = new double[13];
 
+
         for (int i = 0; i < 13; i++) {
 
             System.out.print("Enter your name: ");
@@ -31,11 +32,7 @@ public class Bank {
                     index = i;
                     break;
                 }
-            }
 
-            if (index ==0) {
-                System.out.println("Account not found!");
-                continue;
             }
 
             System.out.print("Do you want to deposit or withdraw? ");
