@@ -8,6 +8,7 @@ public class Bank {
         int[] accountNumber = new int[13];
         double[] amount = new double[13];
 
+
         for (int i = 0; i < 13; i++) {
 
             System.out.print("Enter your name: ");
