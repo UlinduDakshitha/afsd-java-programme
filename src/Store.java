@@ -30,6 +30,7 @@ public class Store {
                 maxAverage=averageSalaries[i];
                 i = index;
             }
-        }System.out.println("Max average department is : "+departments[index+1]);
+        }
+        System.out.println("Max average department is : "+departments[index+1]);
     }
 }
