@@ -5,6 +5,6 @@ public class Methods {
     }
 
     public static void getTotal(){
-        System.out.println("Hello Yasindu");
+        System.out.print("Hello Yasindu");
     }
 }
